@@ -1,0 +1,115 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px gray;
+    border-radius: 10px;
+    background-color: #0a192f;
+}
+::-webkit-scrollbar-thumb {
+    background: #8892b0;
+    border-radius: 10px;
+}
+
+/* intro */
+#text {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    }
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+    }
+}
+
+#intro {
+    background-color: #08101d;
+}
+
+#intro-display-none {
+    opacity: 0;
+    z-index: -10;
+    transition: all 1s;
+}
+
+#line {
+    animation: loading 2s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading {
+    0% {
+    width: 0%;
+    }
+    100% {
+    width: 100%;
+    }
+}
+
+#top-wrapper p {
+    font-family: 'Montserrat';
+}
+
+#header span {
+    font-size: 12px;
+}
+
+#header-logo img:hover{
+    box-shadow: 1px 1px 2px black, 0 0 25px #ffe364, 0 0 5px rgb(139, 0, 0);
+}
+
+#header-list a:hover {
+    color: #ffe364;
+    text-shadow: 1px 1px 15px #ffe364;
+}
+
+#dropdown a:hover {
+    color: #ffe364;
+    text-shadow: 1px 1px 15px #ffe364;
+}
+
+#about img:hover{
+    box-shadow: 1px 1px 2px black, 0 0 25px #ffe364, 0 0 5px rgb(139, 0, 0);
+}
+
+#link a:hover {
+    filter: invert(80%) sepia(68%) saturate(438%) hue-rotate(337deg) brightness(199%) contrast(101%);
+}
+
+#li li::marker {
+    content: "➤";
+    color: #ffe364;
+}
+
+#project:hover #judul {
+    -webkit-text-fill-color: #ffe364;
+}
+
+#footer a:hover {
+    -webkit-text-fill-color: #ffe364;
+}
+
+#gmail:hover {
+    -webkit-text-fill-color: #ffe364;
+}
+
+#github:hover {
+    filter: invert(80%) sepia(68%) saturate(438%) hue-rotate(337deg) brightness(199%) contrast(101%);
+}
+
+#instagram:hover {
+    filter: invert(80%) sepia(68%) saturate(438%) hue-rotate(337deg) brightness(199%) contrast(101%);
+}
+
+#linkedin:hover {
+    filter: invert(80%) sepia(68%) saturate(438%) hue-rotate(337deg) brightness(199%) contrast(101%);
+}
